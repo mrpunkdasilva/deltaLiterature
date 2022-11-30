@@ -20,7 +20,9 @@ class Theme extends React.Component {
 			<div class="container">
 				<Header />
 
-				{ children }
+				<div className="container">
+					{ children }
+				</div>
 
 				<Footer />	
 			</div>

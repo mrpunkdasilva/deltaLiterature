@@ -19,8 +19,8 @@ class Footer extends React.Component {
           ΔLiterature 💜
         </h5>
       </footer>
-		)
-	};
+		);
+	}
 }
 
 export default Footer;
