@@ -4,14 +4,9 @@ import Header from '../Header';
 import Footer from '../Footer';
 
 
-class Theme extends React.Component {
+class Theme extends Component {
 	constructor(props) {
 		super(props);
-		const { children } = this.props;
-	
-		this.state {
-
-		};
 	}
 
 
@@ -21,7 +16,7 @@ class Theme extends React.Component {
 				<Header />
 
 				<div className="container">
-					{ children }
+					{ this.props.children }
 				</div>
 
 				<Footer />	

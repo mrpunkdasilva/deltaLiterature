@@ -5,10 +5,6 @@ class SectionContextHistoric extends React.Component {
   constructor(props) {
     super(props);
     const { children } = this.props;
-  
-    this.state {
-
-    };
   }
 
 

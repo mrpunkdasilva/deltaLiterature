@@ -6,9 +6,6 @@ class QuotationBox extends React.Component {
 		super(props);
 		const { children } = this.props;
 	
-		this.state {
-
-		};
 	}
 
 

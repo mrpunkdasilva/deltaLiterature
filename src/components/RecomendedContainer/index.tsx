@@ -6,9 +6,6 @@ class RecomendedContainer extends React.Component {
 		super(props);
 		const { children } = this.props;
 	
-		this.state {
-
-		};
 	}
 
 

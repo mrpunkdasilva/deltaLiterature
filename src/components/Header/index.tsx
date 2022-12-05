@@ -1,55 +1,66 @@
 import React, { Component } from 'react';
 
+import { linksNavMain, linksNavSchools } from '../../assets/data/links';
+
 
 class Header extends React.Component {
 	constructor(props) {
-		super(props);
-	
-		this.state {
-
-		};
+		super(props);	
 	}
 
 
 	render() {
 		return (
-			<header class="header-page">
-          
-          <div class="box-logo">
-            <h1 class="logo">
+			<header className="header-page">
+        <div className="box-logo">
+          <a href="/">
+            <h1 className="logo">
               ΔLiterature
             </h1>
+          </a>
+        </div>
+
+        <nav className="navbar navbar-expand-lg navbar-light">
+          <div className="navbar"></div>
+          <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+              <div class="container">
+                
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </a>
+      
+                <div class="nav-collapse collapse">
+      
+                  <ul class="nav">
+                    {
+                      linksNavMain.map(({ name, route, index }) => (
+                        <li key={index} className="nav-link">
+                          <a href={route}>{name}</a>
+                        </li>
+                      ))
+                    }
+                  </ul>
+      
+                  <ul class="nav">
+                    {
+                      linksNavSchools.map(({ name, route, index }) => (
+                        <li key={index} className="nav-link">
+                          <a href={route}>{name}</a>
+                        </li>
+                      ))
+                    }
+                  </ul>            
+                </div>
+              </div>
+            </div>
           </div>
-
-          
-          <nav class="navbar">
-            
-            <ul class="nav-links">
-              <li class="nav-link">
-                <a href="index.html">Home</a>
-              </li>
-              
-              <li class="nav-link">
-                <a href="lord-byron.html">Lord Byron</a>
-              </li>
-              
-              <li class="nav-link">
-                <a href="edgar-alan-poe.html">Edgar Alan Poe</a>
-              </li>
-              
-              <li class="nav-link">
-                <a href="augusto-dos-anjos.html">Augusto dos Anjos</a>
-              </li>
-               
-               <li class="nav-link">
-                <a href="contact.html">Contato</a>
-              </li>
-            </ul>
-          </nav>
-
-        </header>
-		)
-	};
+        </nav>
+      </header>
+		);
+	}
 }
 
 export default Header;

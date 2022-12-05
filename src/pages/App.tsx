@@ -1,7 +1,7 @@
 import React, { Component, useState } from 'react';
 
 
-import React from '../components/Theme';
+import Theme from '../components/Theme';
 
 type Props = {
   prop: any
@@ -12,7 +12,6 @@ export default class App extends Component {
   constructor(props: Props) {
     super(props);
 
-    this.state = {  };
   }
 
 
