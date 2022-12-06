@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 
 import { linksNavMain, linksNavSchools } from '../../assets/data/links';
 
+import './styles.scss';
+
 
 class Header extends React.Component {
+
 	constructor(props) {
 		super(props);	
 	}
-
 
 	render() {
 		return (
@@ -15,26 +17,26 @@ class Header extends React.Component {
         <div className="box-logo">
           <a href="/">
             <h1 className="logo">
-              ΔLiterature
+              <span>Δ</span>Literature
             </h1>
           </a>
         </div>
 
-        <nav className="navbar navbar-expand-lg navbar-light">
+        <nav className="navbar navbar-expand-lg navbar-light navbar-fixed-top navbar-customize">
           <div className="navbar"></div>
-          <div class="navbar navbar-fixed-top">
-            <div class="navbar-inner">
-              <div class="container">
+          <div className="navbar navbar-fixed-top">
+            <div className="navbar-inner">
+              <div className="container">
                 
-                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
+                <a className="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                  <span className="icon-bar"></span>
+                  <span className="icon-bar"></span>
+                  <span className="icon-bar"></span>
                 </a>
       
-                <div class="nav-collapse collapse">
+                <div className="nav-collapse collapse">
       
-                  <ul class="nav">
+                  <ul className="nav">
                     {
                       linksNavMain.map(({ name, route, index }) => (
                         <li key={index} className="nav-link">
@@ -47,8 +49,8 @@ class Header extends React.Component {
                   <ul class="nav">
                     {
                       linksNavSchools.map(({ name, route, index }) => (
-                        <li key={index} className="nav-link">
-                          <a href={route}>{name}</a>
+                        <li key={ index } className="nav-link">
+                          <a href={ route }>{ name }</a>
                         </li>
                       ))
                     }
@@ -61,6 +63,7 @@ class Header extends React.Component {
       </header>
 		);
 	}
+
 }
 
 export default Header;

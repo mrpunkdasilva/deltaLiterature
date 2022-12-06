@@ -1,0 +1,68 @@
+@import '../../styles/_variables.scss';
+
+
+/*
+================
+  header Page
+================
+*/
+.header-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $dark-100;
+
+  color: $white;
+}
+
+.box-logo {
+  padding: 1.2rem;
+}
+
+.navbar {
+  border-top: 2px solid var(--white);
+  border-bottom: 2px solid var(--white);
+  width: 100%;
+}
+
+.navbar .nav-links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  padding: .6rem 1.3rem;
+}
+
+@media screen and (max-width: 425px) {
+  .navbar .nav-links {
+      flex-wrap: wrap;
+  }
+
+  .hero-content p {
+    padding: 0 1rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero-content p {
+    font-size: 1.6rem;
+  }    
+}
+
+.nav-link {
+  padding: 1rem 1.3rem;
+  position: relative;
+
+  a {
+    color: $white;
+    transition: color .5s;
+
+    &:hover {
+      color: $red-500;
+      letter-spacing: .2pt;
+    }
+  }  
+}

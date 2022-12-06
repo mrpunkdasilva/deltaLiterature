@@ -19,7 +19,7 @@ export default class App extends Component {
     return ( 
       <Theme>
         <main className="page">
-          <h2>Hello Deltas!</h2>
+          <h2 className="heading">Hello Deltas!</h2>
         </main>        
       </Theme>
     );

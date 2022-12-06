@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import Header from '../Header';
 import Footer from '../Footer';
 
+import '../../styles/main.scss';
+
 
 class Theme extends Component {
 	constructor(props) {

@@ -12,8 +12,8 @@ class Footer extends React.Component {
 	render() {
 		return (
 			<footer class="footer-page">
-        <h5 class="footer-logo">
-          ΔLiterature 💜
+        <h5 class="logo footer-logo">
+          <span>Δ</span>Literature 💜
         </h5>
       </footer>
 		);
