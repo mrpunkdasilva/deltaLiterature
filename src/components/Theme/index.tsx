@@ -5,20 +5,23 @@ import Footer from '../Footer';
 
 import '../../styles/main.scss';
 
+type Props = { children: React.ReactNode }
 
 class Theme extends Component {
-	constructor(props) {
+	constructor(props: Props) {
 		super(props);
 	}
 
 
 	render() {
+		const children = this.props.children;
+
 		return (
-			<div class="container">
+			<div className="container">
 				<Header />
 
 				<div className="container">
-					{ this.props.children }
+					{ children }
 				</div>
 
 				<Footer />	
