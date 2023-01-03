@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class SecionAboutUs extends Component {
+class SectionAboutUs extends Component {
 	render() {
 		return (
 			<section className="container bg-white">
@@ -25,4 +25,4 @@ class SecionAboutUs extends Component {
 	}
 }
 
-export default { SecionAboutUs };
+export default { SectionAboutUs };
